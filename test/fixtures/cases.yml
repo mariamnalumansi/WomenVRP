@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  continent: "Africa"
+  country: "Uganda"
+  district: "kampala"
+  case_category: "stalking"
+  description: "terrible"
+
+two:
+  id: 2
+  continent: "Africa"
+  country: "Uganda"
+  district: "Jinja"
+  case_category: "stalking"
+  description: "Too much"

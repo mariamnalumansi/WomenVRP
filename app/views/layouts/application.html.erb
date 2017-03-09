@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= yield(:title) %></title>
+
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  
+   <%= stylesheet_link_tag 'stylesheets/custom', :media => 'screen' %>
+
+
+  <%= csrf_meta_tags %>
+
+  
+
+</head>
+<body>
+<div id="main">
+    
+    
+    <%= yield %>
+    <footer>
+      <p>Copyright &copy; womenReportPlatform</p>
+    </footer>
+  </div>
+  <p>&nbsp;</p>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+  <script type="text/javascript" src="js/image_fade.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+
+
+</body>
+</html>
